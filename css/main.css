@@ -1,0 +1,66 @@
+#landing-page-header {
+  position: absolute;
+  width: 100%;
+  height: 360px;
+  background-image: url(../img/homeHeader.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#landing-page-header-overlay {
+  position: absolute;
+  background-color: rgba(0,0,0,0.3);
+  width: 100%;
+  height: 360px;
+  z-index: 100;
+}
+
+#landing-page-header-text {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px -2px rgba(0,0,0,0.5);
+  text-shadow: -2px 2px rgba(0,0,0,0.5);
+  text-shadow: -2px -2px rgba(0,0,0,0.5);
+  text-shadow: 2px 2px rgba(0,0,0,0.5);
+  z-index: 500;
+}
+
+#navigation-bar {
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  background-color: rgba(0,0,0,0.1);
+  z-index: 101
+}
+
+#navigation-bar li {
+  font-weight: bold;
+  list-style-type: none;
+  font-size: 1.2em;
+  display: inline-block;
+  height: 60px;
+  margin-top: 17px;
+  padding: 0 12px;
+}
+
+#navigation-bar a {
+  color: #eeeeee;
+}
+
+#navigation-bar a:hover {
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#navigation-rest-button {
+  position: relative;
+  float: right;
+  bottom: 87px;
+}
