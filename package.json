@@ -1,0 +1,28 @@
+{
+  "name": "ractliffe-dog-training",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lancelafontaine/ractliffe-dog-training.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lancelafontaine/ractliffe-dog-training/issues"
+  },
+  "homepage": "https://github.com/lancelafontaine/ractliffe-dog-training#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.10",
+    "gulp-concat": "^2.6.0",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-less": "^3.1.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-watch": "^4.3.8",
+    "run-sequence": "^1.2.1"
+  }
+}
