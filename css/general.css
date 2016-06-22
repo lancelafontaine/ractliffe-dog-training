@@ -1,0 +1,23 @@
+body {
+  font-family: 'Roboto', sans-serif !important;
+}
+.page {
+  position: absolute;
+  top: 450px;
+  width: 100%;
+}
+.page-heading {
+  font-size: 4em;
+  font-style: italic;
+}
+.page p {
+  font-size: 1.5em;
+  line-height: 200%;
+  margin: 10px 0;
+  color: #646464;
+}
+.page li {
+  font-size: 1.5em;
+  line-height: 180%;
+  color: #646464;
+}

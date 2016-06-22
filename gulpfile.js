@@ -17,7 +17,10 @@ gulp.task('less', function () {
 })
 
 gulp.task('css', function () {
-  return gulp.src('css/**/*.css')
+  return gulp.src([
+      'css/thirdParty/*.css',
+      'css/**/*.css'
+    ])
     .pipe(concat('style.css'))
     .pipe(minifyCSS({compatibility: 'ie8'}))
     .pipe(gulp.dest('.'));

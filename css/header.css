@@ -1,4 +1,4 @@
-#landing-page-header {
+#header {
   position: absolute;
   width: 100%;
   height: 450px;
@@ -7,14 +7,14 @@
   background-position: center;
   background-size: cover;
 }
-#landing-page-header-overlay {
+#header-overlay {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
   height: 450px;
   z-index: 100;
 }
-#landing-page-header-text {
+#header-text {
   font-size: 2.5em;
   font-weight: bold;
   color: #ffffff;
@@ -29,14 +29,36 @@
   text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
   z-index: 500;
 }
-#navigation-bar {
+#header-border-1 {
   position: absolute;
+  top: 450px;
+  height: 5px;
+  width: 100%;
+  background-color: #1e1e1e;
+  z-index: 5;
+}
+#header-border-2 {
+  position: absolute;
+  top: 450px;
+  height: 10px;
+  width: 100%;
+  background-color: #3c3c3c;
+}
+#navigation-bar {
+  position: fixed;
   height: 60px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
-  z-index: 101;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: 1001;
+  -webkit-transition: background-color 1.5s;
+  -moz-transition: background-color 1.5s;
+  -o-transition: background-color 1.5s;
+  transition: background-color 1.5s;
 }
-#navigation-bar li {
+.navigation-bar-scrolled {
+  background-color: rgba(0, 0, 0, 0.75) !important;
+}
+.nav-button {
   font-weight: bold;
   list-style-type: none;
   font-size: 1.2em;
@@ -44,6 +66,9 @@
   height: 60px;
   margin-top: 17px;
   padding: 0 12px;
+}
+.nav-button-clicked {
+  text-decoration: underline;
 }
 #navigation-bar a {
   color: #eeeeee;
