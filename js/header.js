@@ -48,8 +48,10 @@ var pageTransition = function (currentPage, pagesToHide) {
   // Transition page content
   for (var i = 0; i < pagesToHide.length; i++) {
     $(pagesToHide[i] + '-page').fadeOut();
+    $(pagesToHide[i] + '-header').fadeOut();
   }
   $(currentPage + '-page').fadeIn();
+  $(currentPage + '-header').fadeIn();
 }
 
 

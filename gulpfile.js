@@ -29,6 +29,7 @@ gulp.task('css', function () {
 gulp.task('js', function () {
   return gulp.src([
       'js/thirdParty/jquery-1.12.4.min.js',
+      'js/thirdParty/dom-i18n.min.js',
       'js/**/*.js'
     ])
     .pipe(concat('index.js'))

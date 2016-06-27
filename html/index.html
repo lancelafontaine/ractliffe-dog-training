@@ -20,18 +20,15 @@
       <div class="row">
         <div class="col-md-12">
           <ul id="navigation-home-button">
-            <li id="home" class="nav-button"><a href="#home">HOME</a>
+            <li id="home" class="nav-button"><a href="#home" data-translatable>HOME // ACCUEIL</a>
             </li>
           </ul>
           <ul id="navigation-rest-button">
-            <li id="about-us" class="nav-button"><a>ABOUT US</a>
-            </li>
-            <li id="services" class="nav-button"><a>SERVICES</a>
-            </li>
-            <li id="photos" class="nav-button"><a>PHOTOS</a>
-            </li>
-            <li id="contact" class="nav-button"><a>CONTACT</a>
-            </li>
+            <li id="about-us" class="nav-button"><a data-translatable>ABOUT US // A PROPOS</a></li>
+            <li id="services" class="nav-button"><a>SERVICES</a></li>
+            <li id="photos" class="nav-button"><a>PHOTOS</a></li>
+            <li id="contact" class="nav-button"><a>CONTACT</a></li>
+            <li id="lang" class="nav-button-lang"><a></a></li>
           </ul>
         </div>
       </div>
@@ -39,8 +36,7 @@
   </div>
 
   <!--HEADER-->
-  <div id="header-overlay"></div>
-  <div id="header">
+  <div id="header-overlay">
     <div class="container">
       <div class="row" id="header-text">
         <div class="col-md-12">
@@ -51,8 +47,13 @@
       </div>
     </div>
   </div>
-  <div id="header-border-1"></div>
-  <div id="header-border-2"></div>
+  <div class="header" id="home-header"></div>
+  <div class="header" id="about-us-header"></div>
+  <div class="header" id="services-header"></div>
+  <div class="header" id="photos-header"></div>
+  <div class="header" id="contact-header"></div>
+  <div class="header" id="header-border-1"></div>
+  <div class="header" id="header-border-2"></div>
 
   <!--HOME-->
   <div id="home-page" class="page" style="display: none;">
@@ -60,7 +61,7 @@
       <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-10">
-          <h1 class="page-heading">Home</h1>
+          <h1 class="page-heading" data-translatable>Home // Page d'Accueil</h1>
           <p>At Ractliffe dog training offers in home dog training, behavioural modification and basic obedience training by using balanced training methods. We customize our training to your specific situation and goals all based on the character, temperament and personality of your dog.</p>
           <p>Services are offered in Montreal and surrounding areas.</p>
           <p>We work towards building a harmonious relationship between you and your dog!<p>
@@ -145,7 +146,6 @@
 
   <!--FOOTER-->
   <!--<div id="footer"></div>-->
-
   <script src="index.js"></script>
 </body>
 

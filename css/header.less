@@ -1,16 +1,32 @@
 @header-height: 450px;
 
-#header {
+.header {
   position: absolute;
   width: 100%;
   height: @header-height;
-  background-image: url(img/homeHeader.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+#home-header {
+  background-image: url(img/home-header.jpg);
+}
+#about-us-header {
+  background-image: url(img/about-us-header.jpg);
+}
+#services-header {
+  background-image: url(img/services-header.jpg);
+}
+#photos-header {
+  background-image: url(img/photos-header.jpg);
+}
+#contact-header {
+  background-image: url(img/contact-header.jpg);
+}
+
 #header-overlay {
   position: absolute;
+  top: 0;
   background-color: rgba(0,0,0,0.3);
   width: 100%;
   height: @header-height;
@@ -68,7 +84,7 @@
   background-color: rgba(0,0,0,0.75) !important;
 }
 
-.nav-button {
+.nav-button, .nav-button-lang {
   font-weight: bold;
   list-style-type: none;
   font-size: 1.2em;
@@ -76,6 +92,7 @@
   height: 60px;
   margin-top: 17px;
   padding: 0 12px;
+  cursor: pointer;
 }
 
 .nav-button-clicked {
