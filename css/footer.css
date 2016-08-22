@@ -1,21 +1,16 @@
-#footer {
-  position: absolute;
-  width: 100%;
-  height: 20px;
+#site-footer {
+  position: relative;
+  color: white;
+  margin-top: 50px;
+  min-height: 150px;
   background-color: #3c3c3c;
 }
-/*#footer-border-1 {*/
-/*position: absolute;*/
-/*top: @header-height;*/
-/*height: 5px;*/
-/*width: 100%;*/
-/*background-color: rgb(30,30,30);*/
-/*z-index: 5;*/
-/*}*/
-/*#footer-border-2 {*/
-/*position: absolute;*/
-/*top: @header-height;*/
-/*height: 10px;*/
-/*width: 100%;*/
-/*background-color: rgb(60,60,60);*/
-/*}*/
+#site-footer .row {
+  margin-top: 30px;
+}
+#footer-social-buttons {
+  text-align: center;
+}
+#footer-copyright {
+  text-align: right;
+}

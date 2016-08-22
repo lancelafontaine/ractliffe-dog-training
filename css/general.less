@@ -1,12 +1,20 @@
 @header-height: 450px;
 
+* {
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
 body {
-  font-family: 'Roboto', sans-serif !important;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .page {
-  position: absolute;
-  top: @header-height;
+  position: relative;
   width: 100%;
 }
 
@@ -30,4 +38,8 @@ body {
 
 #logo {
   height: 200px;
+}
+
+#page-wrap-for-footer {
+  flex: 1;
 }

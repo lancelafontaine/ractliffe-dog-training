@@ -1,9 +1,16 @@
+* {
+  margin: 0;
+}
+html {
+  height: 100%;
+}
 body {
-  font-family: 'Roboto', sans-serif !important;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .page {
-  position: absolute;
-  top: 450px;
+  position: relative;
   width: 100%;
 }
 .page-heading {
@@ -23,4 +30,7 @@ body {
 }
 #logo {
   height: 200px;
+}
+#page-wrap-for-footer {
+  flex: 1;
 }
