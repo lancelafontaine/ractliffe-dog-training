@@ -47,8 +47,8 @@ var changePage = function (currentPage) {
 var pageTransition = function (currentPage, pagesToHide) {
   // Transition page content
   for (var i = 0; i < pagesToHide.length; i++) {
-    $(pagesToHide[i] + '-page').fadeOut();
-    $(pagesToHide[i] + '-header').fadeOut();
+    $(pagesToHide[i] + '-page').css('display', 'none');
+    $(pagesToHide[i] + '-header').css('display', 'none');
   }
   $(currentPage + '-page').fadeIn();
   $(currentPage + '-header').fadeIn();
