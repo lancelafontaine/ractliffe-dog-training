@@ -7,6 +7,7 @@ var watch = require('gulp-watch');
 var runSequence = require('run-sequence');
 var minifyJS = require('gulp-uglify');
 var minifyHTML = require('gulp-htmlmin');
+var connect = require('gulp-connect');
 
 gulp.task('less', function () {
   return gulp.src('css/**/*.less')
@@ -53,6 +54,10 @@ gulp.task('watch', function () {
   gulp.watch('html/**/*.html', ['html']);
 });
 
+gulp.task('server', function () {
+  connect.server();
+});
+
 gulp.task('default', function (){
-  runSequence('less', ['css', 'js', 'html'], 'watch');
+  runSequence('less', ['css', 'js', 'html'], 'watch', 'server');
 });
