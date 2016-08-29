@@ -17,7 +17,8 @@ body {
   font-size: 4em;
   font-style: italic;
 }
-.page p {
+.page p,
+.page span {
   font-size: 1.5em;
   line-height: 200%;
   margin: 10px 0;
@@ -33,4 +34,31 @@ body {
 }
 #page-wrap-for-footer {
   flex: 1;
+}
+#services1 {
+  height: 300px;
+}
+#services2 {
+  height: 300px;
+}
+#services3 {
+  height: 300px;
+}
+#services4 {
+  height: 300px;
+}
+#services5 {
+  height: 300px;
+}
+#gallery1 {
+  height: 300px;
+}
+#gallery2 {
+  height: 300px;
+}
+#gallery3 {
+  height: 300px;
+}
+#gallery4 {
+  height: 300px;
 }

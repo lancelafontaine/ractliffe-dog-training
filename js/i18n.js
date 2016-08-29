@@ -10,20 +10,28 @@ var i18n = window.domI18n({
 
 if (defaultLang.slice(0,2) === 'fr') {
   $('#lang').html('<a>EN</a>');
+  $('#res-lang').html('<a>EN</a>');
 } else {
   $('#lang').html('<a>FR</a>');
+  $('#res-lang').html('<a>FR</a>');
 }
 
-$('.nav-button-lang').click(function () {
-  var changeLangTo = $(this).text();
-  console.log(changeLangTo);
+var changeLanguage = function (changeLangTo) {
   if (changeLangTo === 'FR') {
     i18n.changeLanguage('fr');
     $('#lang').html('<a>EN</a>');
+    $('#res-lang').html('<a>EN</a>');
   }
   if (changeLangTo === 'EN'){
     i18n.changeLanguage('en');
     $('#lang').html('<a>FR</a>');
+    $('#res-lang').html('<a>FR</a>');
   }
-});
+}
 
+$('.res-nav-button-lang').click(function(){
+  changeLanguage($(this).text());
+});
+$('.nav-button-lang').click(function(){
+  changeLanguage($(this).text());
+});

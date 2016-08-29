@@ -1,4 +1,4 @@
-@header-height: 450px;
+@header-height: 400px;
 
 .header {
   position: relative;
@@ -94,7 +94,7 @@
   cursor: pointer;
 }
 
-.nav-button-clicked {
+.nav-button:hover, .nav-button-lang:hover, .res-nav-button:hover, .res-nav-button-lang:hover {
   text-decoration: underline;
 }
 
@@ -112,4 +112,50 @@
   position: relative;
   float: right;
   bottom: 87px;
+}
+
+// Hamburger Menu transformation
+@media all and (max-width: 630px) {
+  #navigation-tabs {
+    display: none;
+  }
+  #hamburger-menu {
+    display: block;
+    color: white;
+    font-size: 25px;
+  	width: 60px;
+  	height: 60px;
+    line-height: 60px;
+    background-color: transparent;
+    transition: background-color 1s ease;
+  }
+  #hamburger-menu:hover {
+    background-color: rgba(255,255,255, 0.2);
+  }
+  #hamburger-menu i {
+    margin-left: 19px;
+  }
+  #responsive-menu {
+    display: block;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgb(60,60,60);
+  }
+
+  .res-nav-button, .res-nav-button-lang {
+    list-style-type: none;
+    width: 100%;
+    color: black;
+    padding: 5px;
+    font-size: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+}
+@media all and (min-width: 631px) {
+  #hamburger-menu, #responsive-menu {
+    display: none;
+  }
 }

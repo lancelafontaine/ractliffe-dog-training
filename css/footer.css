@@ -8,9 +8,73 @@
 #site-footer .row {
   margin-top: 30px;
 }
-#footer-social-buttons {
-  text-align: center;
+.social-button-circles {
+  margin: 0 auto;
 }
-#footer-copyright {
-  text-align: right;
+.social-button-circle {
+  position: relative;
+  color: white;
+  display: inline-block;
+  margin: 5px;
+  background-color: #646464;
+  border-radius: 100%;
+  height: 65px;
+  line-height: 75px;
+  width: 65px;
+  bottom: 0;
+}
+.social-button-circle:hover,
+.social-button-circle:visited,
+.social-button-circle:active,
+.social-button-circle:focus {
+  color: white;
+}
+#social-button-facebook {
+  -webkit-transition: bottom 0.5s ease, background-color 0.35s linear;
+  -moz-transition: bottom 0.5s ease, background-color 0.35s linear;
+  -o-transition: bottom 0.5s ease, background-color 0.35s linear;
+  transition: bottom 0.5s ease, background-color 0.35s linear;
+}
+#social-button-facebook:hover {
+  background-color: #3B5998;
+  bottom: 5px;
+}
+#social-button-instagram {
+  -webkit-transition: bottom 0.5s ease, background-color 0.35s linear;
+  -moz-transition: bottom 0.5s ease, background-color 0.35s linear;
+  -o-transition: bottom 0.5s ease, background-color 0.35s linear;
+  transition: bottom 0.5s ease, background-color 0.35s linear;
+}
+#social-button-instagram:hover {
+  background-color: #9c3b8f;
+  bottom: 5px;
+}
+#social-button-email {
+  -webkit-transition: bottom 0.5s ease, background-color 0.35s linear;
+  -moz-transition: bottom 0.5s ease, background-color 0.35s linear;
+  -o-transition: bottom 0.5s ease, background-color 0.35s linear;
+  transition: bottom 0.5s ease, background-color 0.35s linear;
+}
+#social-button-email:hover {
+  background-color: #dd4b39;
+  bottom: 5px;
+}
+@media all and (max-width: 1094px) {
+  #footer-contact,
+  #footer-social-buttons,
+  #footer-copyright {
+    text-align: center;
+    margin: 10px 0;
+  }
+}
+@media all and (min-width: 1095px) {
+  #footer-contact {
+    text-align: left;
+  }
+  #footer-social-buttons {
+    text-align: center;
+  }
+  #footer-copyright {
+    text-align: right;
+  }
 }

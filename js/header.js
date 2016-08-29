@@ -11,12 +11,21 @@ $(window).scroll(function() {
   }
 });
 
-// Initiate page change
+// Initiate page change for large screens
 $('.nav-button').click(function () {
   $('.nav-button').removeClass('nav-button-clicked');
   $(this).addClass('nav-button-clicked');
   var previousPage = location.hash;
   location.hash = $(this).attr('id');
+  shouldChangePage(previousPage);
+});
+
+// Initiate page change for small screens
+$('.res-nav-button').click(function () {
+  $('.res-nav-button').removeClass('nav-button-clicked');
+  $(this).addClass('nav-button-clicked');
+  var previousPage = location.hash;
+  location.hash = $(this).attr('id').match(/res-(.+)/)[1];
   shouldChangePage(previousPage);
 });
 
@@ -41,7 +50,7 @@ var changePage = function (currentPage) {
       return;
     }
   }
-  console.log('Page does not exist.');
+  console.error('Page does not exist.');
 }
 
 var pageTransition = function (currentPage, pagesToHide) {
@@ -62,3 +71,19 @@ if (location.hash !== '' && location.hash !== '#') {
   location.hash = '#home';
   changePage(location.hash);
 }
+
+// Specific to responsive design
+var toggleResponsiveMenu = function () {
+  if ($('#hamburger-menu').attr('class') == 'res-open') {
+    $('#hamburger-menu').removeClass('res-open');
+    $('#responsive-menu').fadeOut(150);
+  } else {
+    $('#hamburger-menu').addClass('res-open');
+    $('#responsive-menu').fadeIn(150);
+  }
+}
+
+$('.res-nav-button, .res-nav-button-lang').click(function () {
+    $('#hamburger-menu').removeClass('res-open');
+    $('#responsive-menu').fadeOut(150);
+});
