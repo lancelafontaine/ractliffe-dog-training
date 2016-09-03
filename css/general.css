@@ -29,11 +29,46 @@ body {
   line-height: 180%;
   color: #646464;
 }
-#logo {
-  height: 200px;
-}
 #page-wrap-for-footer {
   flex: 1;
+}
+#map_canvas {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 230px;
+}
+.required-star {
+  color: red !important;
+}
+#contact-left {
+  display: inline-block;
+  width: 48%;
+}
+#contact-right {
+  display: inline-block;
+  width: 48%;
+  float: right;
+}
+#contact-pending {
+  position: relative;
+  top: 4px;
+}
+#contact-success i {
+  color: #5CB85C !important;
+  font-size: 14px;
+}
+#contact-success span {
+  color: #5CB85C !important;
+  font-size: 13px;
+}
+#contact-error i {
+  color: #D9534F !important;
+  font-size: 14px;
+}
+#contact-error span {
+  color: #D9534F !important;
+  font-size: 13px;
 }
 #services1 {
   height: 300px;

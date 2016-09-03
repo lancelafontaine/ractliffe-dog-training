@@ -185,14 +185,56 @@
   <div id="contact-page" class="page" style="display: none;">
     <div class="container">
       <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-10">
+        <div class="col-md-12">
+          <div id="map_canvas"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
           <h1 class="page-heading" data-translatable>Contact Us // Nous Contacter</h1>
           <p data-translatable>You are free to call us at anytime! // Vous pouvez nous contacter à toutes heures!<p>
-          <p data-translatable>TELEPHONE: 514-730-5951</p>
-          <p data-translatable>EMAIL: RactliffeDogTraining@gmail.com</p>
+          <div>
+            <p><strong><em>TELEPHONE</em></strong></p>
+            <p>514-730-5951</p>
+          </div>
+          <div>
+            <p><strong><em>EMAIL</em></strong></p>
+            <p>ractliffedogtraining@gmail.com</p>
+          </div>
+          
         </div>
-        <div class="col-md-1"></div>
+        <div class="col-md-6">
+          <form id="contact-form">
+            <div id="contact-left" class="form-group">
+              <label for="first-name" data-translatable>First Name // Prénom</label><span class="required-star">*</span>
+              <input type="text" class="form-control" id="contact-first-name" required pattern="\w+"/>
+            </div>
+            <div id="contact-right" class="form-group">
+              <label for="first-name" data-translatable>Last Name // Nom de famille</label><span class="required-star">*</span>
+              <input type="text" class="form-control" id="contact-last-name" required pattern="\w+"/>
+            </div>
+            <div class="form-group">
+              <label for="email" data-translatable>Email address // Addresse courriel</label><span class="required-star">*</span>
+              <input type="email" class="form-control" id="contact-email" required/>
+            </div>
+            <div class="form-group">
+              <label for="pwd" data-translatable>Reason For Contacting // Message</label><span class="required-star">*</span>
+              <textarea class="form-control" id="contact-message" rows="7" required></textarea>
+            </div>
+            <button id="contact-submit-button" type="submit" class="btn btn-success" data-translatable>Submit // Soumettre</button>
+            <span style="display: none;" id="contact-pending">&nbsp;<i class="fa fa-spinner fa-spin"></i></span>
+            <span style="display: none;" id="contact-success">
+              &nbsp;
+              <i class="fa fa-thumbs-o-up"></i>
+              <span data-translatable> Successfully sent! We'll get back to you as soon as possible. // Soumis avec succès! On vous répondera aussitôt possible.</span>
+            </span>
+            <span style="display: none;" id="contact-error">
+              &nbsp;
+              <i class="fa fa-exclamation"></i>
+              <span data-translatable> Something went wrong! Please email us at ractliffedogtraining@gmail.com. // Oops! SVP envoyer un courriel à ractliffedogtraining@gmail.com. </span>
+            </span>
+          </form>
+        </div>
       </div>
     </div>
   </div>
@@ -205,8 +247,8 @@
       <div class="row">
         <div id="footer-contact" class="col-md-4">
           <p>Sheldon Ractliffe</p>
+          <p>ractliffedogtraining@gmail.com</p>
           <p>514-730-5951</p>
-          
         </div>
         <div id="footer-social-buttons" class="col-md-4">
           <div class="social-buttons-circles">
@@ -216,7 +258,7 @@
             <a href="https://www.instagram.com/ractliffedogtraining/" target="_blank" id="social-button-instagram" class="social-button-circle">
               <i class="fa fa-2x fa-instagram"></i>
             </a>
-            <a href="mailto:ractliffedogtraining@gmail.com" target="_blank" id="social-button-email" class="social-button-circle">
+            <a id="social-button-email" class="social-button-circle">
               <i class="fa fa-2x fa-envelope"></i>
             </a>
           </div>
@@ -231,6 +273,7 @@
       
     </div>
   </footer>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
   <script src="index.js"></script>
 </body>
 
