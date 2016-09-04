@@ -30,6 +30,13 @@
       $('#res-lang').html('<a>FR</a>');
     }
   }
+  
+  $(window).load(function () {
+    if (window.location.search.search(/lang=fr/) !== -1) {
+      changeLanguage('FR');
+    }
+  });
+  
 
   $('.res-nav-button-lang').click(function(){
     changeLanguage($(this).text());
