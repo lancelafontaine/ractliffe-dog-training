@@ -67,15 +67,12 @@
 
 
   // On page load
-  $(window).load(function () {
-    if (location.hash !== '' && location.hash !== '#') {
-      changePage(location.hash);
-    } else {
-      location.hash = '#home';
-      changePage(location.hash);
-    }
-  });
-  
+  if (location.hash !== '' && location.hash !== '#') {
+    changePage(location.hash);
+  } else {
+    location.hash = '#home';
+    changePage(location.hash);
+  }
 
   // Specific to responsive design
   var toggleResponsiveMenu = function () {

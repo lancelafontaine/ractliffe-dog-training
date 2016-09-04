@@ -70,12 +70,7 @@ body {
   color: #D9534F !important;
   font-size: 13px;
 }
-.center-image img {
-  display: block;
-  margin: 0 auto;
-}
-#services1,
-#services2 {
+#services1 {
   height: 300px;
 }
 #services2 {
