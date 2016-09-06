@@ -12,6 +12,31 @@
       $('#navigation-bar').removeClass('navigation-bar-scrolled')
     }
   });
+  
+  
+  var moveHeaderText = function () {
+    if ($(window).width() > 840) {
+      if($('#home-header').is(':visible')) {
+        $('#header-text .col-md-12').css('left', '0');
+      }
+      if($('#about-us-header').is(':visible')) {
+        $('#header-text .col-md-12').css('left', '-145px');
+      }
+      if($('#services-header').is(':visible')) {
+        $('#header-text .col-md-12').css('left', '275px');
+      }
+      if($('#photos-header').is(':visible')) {
+        $('#header-text .col-md-12').css('left', '-260px');
+      }
+      if($('#contact-header').is(':visible')) {
+        $('#header-text .col-md-12').css('left', '170px');
+      }
+    } else {
+      $('#header-text .col-md-12').css('left', '0');
+    }
+  };
+  
+  $(window).resize(moveHeaderText);
 
   // Initiate page change for large screens
   $('.nav-button').click(function () {
@@ -20,6 +45,7 @@
     var previousPage = location.hash;
     location.hash = $(this).attr('id');
     shouldChangePage(previousPage);
+    moveHeaderText();
   });
 
   // Initiate page change for small screens
@@ -29,6 +55,7 @@
     var previousPage = location.hash;
     location.hash = $(this).attr('id').match(/res-(.+)/)[1];
     shouldChangePage(previousPage);
+    moveHeaderText();
   });
 
   // Check to see if page has changed or not, avoids unnecessary transition.
@@ -86,6 +113,7 @@
       $('#responsive-menu').fadeIn(150);
     }
   }
+  $('#hamburger-menu').click(toggleResponsiveMenu);
 
   $('.res-nav-button, .res-nav-button-lang').click(function () {
       $('#hamburger-menu').removeClass('res-open');
