@@ -12,4 +12,8 @@ $(window).load(function () {
   initGoogleMaps();
 });
 
+$('#contact, #res-contact').click(function () {
+  google.maps.event.trigger(map, 'resize');
+})
+
 })();
