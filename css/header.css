@@ -105,7 +105,7 @@
   float: right;
   bottom: 87px;
 }
-@media all and (max-width: 630px) {
+@media all and (max-width: 900px) {
   #navigation-tabs {
     display: none;
   }
@@ -144,7 +144,7 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
 }
-@media all and (min-width: 631px) {
+@media all and (min-width: 901px) {
   #hamburger-menu,
   #responsive-menu {
     display: none;

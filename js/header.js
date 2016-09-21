@@ -1,6 +1,6 @@
 (function () {
   
-  var pages = ['#home', '#about-us', '#services', '#photos', '#contact'];
+  var pages = ['#home', '#about-us', '#services', '#photos', '#contact', '#testimonials'];
 
   // Navbar bar opacity change on scroll.
   $(window).scroll(function() {
