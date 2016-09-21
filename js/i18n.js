@@ -23,11 +23,17 @@
       i18n.changeLanguage('fr');
       $('#lang').html('<a>EN</a>');
       $('#res-lang').html('<a>EN</a>');
+      // Manual localization for about page due to framework used unable to parse nested html tags
+      $('#en-about-us-text').hide();
+      $('#fr-about-us-text').show();
     }
     if (changeLangTo === 'EN'){
       i18n.changeLanguage('en');
       $('#lang').html('<a>FR</a>');
       $('#res-lang').html('<a>FR</a>');
+      // Manual localization for about page due to framework used unable to parse nested html tags
+      $('#fr-about-us-text').hide();
+      $('#en-about-us-text').show();
     }
   }
   
