@@ -2,6 +2,9 @@
   "name": "ractliffe-dog-training",
   "version": "1.0.0",
   "description": "",
+  "scripts": {
+    "start": "gulp"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lancelafontaine/ractliffe-dog-training.git"
