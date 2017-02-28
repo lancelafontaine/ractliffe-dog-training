@@ -1,5 +1,5 @@
 (function () {
-  
+
   $('#social-button-email').click(function () {
     $('#contact').click();
     $('#contact-first-name').focus();
@@ -8,16 +8,16 @@
   $("#contact-form").submit(function (e) {
     //Stop form submission
     e.preventDefault();
-    
+
     $('#contact-pending').show();
-    
+
     var firstName = $('#contact-first-name').val();
     var lastName = $('#contact-last-name').val();
     var email = $('#contact-email').val();
     var message = $('#contact-message').val();
-    
+
     $.ajax({
-      url: atob("aHR0cDovL21haWx0aGlzLnRvL3N5bXBoeDkyQGdtYWlsLmNvbQ=="),
+      url: atob("aHR0cDovL21haWx0aGlzLnRvL3JhY3RsaWZmZWRvZ3RyYWluaW5nQGdtYWlsLmNvbQ=="),
       method: "POST",
       data: {
         firstName: firstName,
@@ -28,7 +28,6 @@
       dataType: "json",
       complete: function (data) {
         if (data.status === 200) {
-          console.log('success');
           $('#contact-pending').hide();
           $('#contact-success').fadeIn();
         } else {
@@ -39,7 +38,7 @@
         }
       }
     });
-    
+
   });
-  
+
 })();
