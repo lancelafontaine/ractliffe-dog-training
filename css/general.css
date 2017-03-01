@@ -103,3 +103,14 @@ image-center img {
   display: block;
   margin: 0 auto;
 }
+#testimonials-page .testimonials-photo-name .testimonials-photo-name-block {
+  margin: 0 auto;
+  width: 150px;
+}
+#testimonials-page .testimonials-photo-name .testimonials-photo-name-block img {
+  display: block;
+  height: 150px  ;
+  width: 150px;
+  border: 1px solid #555;
+  border-radius: 50%;
+}
