@@ -31,11 +31,16 @@
       if($('#contact-header').is(':visible')) {
         $('#header-text .col-md-12').css('left', '170px');
       }
+      if($('#testimonials-header').is(':visible')) {
+        $('#header-text .col-md-12').css('left', '150px');
+      }
     } else {
       $('#header-text .col-md-12').css('left', '0');
     }
   };
-  
+
+  $(window).load(moveHeaderText);
+  $(document).ready(moveHeaderText);
   $(window).resize(moveHeaderText);
 
   // Initiate page change for large screens

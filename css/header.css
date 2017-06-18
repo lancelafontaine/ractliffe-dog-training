@@ -21,6 +21,9 @@
 #contact-header {
   background-image: url(img/contact-header.jpg);
 }
+#testimonials-header {
+  background-image: url(img/testimonials-header.jpg);
+}
 #header-overlay {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.3);
